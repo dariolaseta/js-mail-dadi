@@ -23,3 +23,11 @@ document.getElementById("output-dice").innerHTML = winnerText;
 // Mail
 
 const authorizedMails = ["gino@gmail.com", "ginetto@gmail.com", "gina@virgilio.it", "ginetta@outlook.it"];
+
+const button = document.querySelector("button.submit");
+
+button.addEventListener("click", function(){
+    let emailCheck = document.getElementById("user-mail").value;
+    console.log(emailCheck);
+    
+});
