@@ -15,5 +15,10 @@ h1{
 
 div.mail{
     margin-top: 5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+}
+
+#output-mail{
+    margin-top: 2rem;
+    font-size: 1.3rem;
 }

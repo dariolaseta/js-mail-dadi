@@ -28,6 +28,19 @@ const button = document.querySelector("button.submit");
 
 button.addEventListener("click", function(){
     let emailCheck = document.getElementById("user-mail").value;
-    console.log(emailCheck);
-    
+    let isMailCorrect = false;
+
+    for(let i = 0; i < authorizedMails.length; i++){
+        let mailList = authorizedMails[i];
+
+        if(emailCheck == mailList){
+            isMailCorrect = true;
+        }
+    }
+
+    if(isMailCorrect){
+        document.getElementById("output-mail").innerHTML = "Email corretta. Accesso completato.";
+    }else{
+        document.getElementById("output-mail").innerHTML = "Email errata. Inserisci una email valida.";
+    }
 });
